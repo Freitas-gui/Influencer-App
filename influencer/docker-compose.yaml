@@ -1,0 +1,15 @@
+version: '3.7'
+services:
+  frontend:
+    image: programadoralternativo/admin-frontend
+
+  backend:
+
+  db:
+    container_name: admin_db
+    image: mysql:5.722
+    environment:
+      MYSQL_DATABASE: admin
+      MYSQL_USER: root
+      MYSQL_PASSWORD: root
+      MYSQL_ROOT_PASSWORD: root
